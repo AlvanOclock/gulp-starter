@@ -21,6 +21,8 @@ Using yarn
 yarn install
 ```
 
+## Configuration
+
 At the top of the `gulpfile.js` you can change 2 constants:
 ```js
 const SRC_DIR = "./integration";
