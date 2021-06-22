@@ -1,7 +1,7 @@
 # gulp-starter
 
-## Resume
-This repository is an example of a configured gulpfile.js. 
+## Description
+This repository is an example of a configured gulpfile.js for JS files and SCSS files.
 
 ## Requirements
 
