@@ -1,7 +1,7 @@
 const app = {
     init: function() {
-        console.log('Init');
-        
+        console.log('app nit');
+
     }
 }
 

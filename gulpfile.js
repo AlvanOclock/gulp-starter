@@ -1,9 +1,13 @@
 'use strict';
+
+// ----- CONFIG CONSTANTS ----- //
+const SRC_DIR = "./integration";
+const DIST_DIR = "./public";
+// -----                  ----- //
  
 /**
  * Requires
  */
-require('dotenv').config()
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
@@ -14,9 +18,6 @@ const notify = require("gulp-notify");
 const throwError = true;
 const rename = require("gulp-rename");
 sass.compiler = require('node-sass');
-
-const SRC_DIR = "./integration";
-const DIST_DIR = "./public";
 
 /**
  * CSS task
@@ -44,14 +45,13 @@ gulp.task('css', function () {
  */
 gulp.task('js', function() {
     return gulp.src(SRC_DIR + '/js/**/*.js')
-      .pipe(concat('main.js'))
-      .pipe(gulp.dest(DIST_DIR + '/scripts'))
-      .pipe(rename({ suffix: '.min' }))
-      .pipe(uglify())
-      //.pipe(livereload(server))
-      .pipe(gulp.dest(DIST_DIR + '/js'))
-      .pipe(notify({ message: 'JS task complete' }));
-  });
+        .pipe(concat('main.js'))
+        .pipe(gulp.dest(DIST_DIR + '/js'))
+        .pipe(rename({ suffix: '.min' }))
+        .pipe(uglify())
+        .pipe(gulp.dest(DIST_DIR + '/js'))
+        .pipe(notify({ message: 'JS task complete' }));
+});
   
 /**
  * Watch CSS an JS
