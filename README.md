@@ -6,7 +6,7 @@ This repository is an example of a configured gulpfile.js.
 ## Requirements
 
 - [nodejs](https://nodejs.org/en/)
-- [npm](https://www.npmjs.com/get-npm)
+- [npm](https://www.npmjs.com/get-npm) or [yarn](https://classic.yarnpkg.com/en/docs/install/)
 - [gulp](https://gulpjs.com/docs/en/getting-started/quick-start/) 
 
 ## Installation
@@ -15,6 +15,13 @@ Using npm
 ```
 npm install
 ```
+
+Using yarn
+```
+yarn install
+```
+
+## Configuration
 
 At the top of the `gulpfile.js` you can change 2 constants:
 ```js
