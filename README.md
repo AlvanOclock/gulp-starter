@@ -39,6 +39,8 @@ const DIST_DIR = "./wp-content/themes/YOUR_THEME/assets";
 
 ## Usage
 
+The `gulpfile.js` is the one where you can set all the tasks you want for you project. 
+
 There is 3 tasks defined.
 
 - `css` that will compressed and compile the .scss files present in your `sass` folder (in your src folder) to your dist folder.
